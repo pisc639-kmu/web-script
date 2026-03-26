@@ -10,6 +10,7 @@
         .then(a=>a.json())
         .then(a=>JSON.stringify(a.map(v=>({initCode:v.initCode,output:v.output})),null,4));
         console.log(a,e);
+		e.innerText='';
         e.placeholder=a;
     }
 )();
